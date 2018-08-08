@@ -5,12 +5,11 @@
   border-radius: 5px;
 }
 
-table {
+.days {
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
-  border: none;
-  margin: 0px;
-  padding: 0px;
-  thead {
-    background-color: #D1D4D9;
+  &>div {
+    flex-basis: 12.525%;
   }
 }

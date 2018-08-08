@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-day',
+  selector: 'div[day]',
   templateUrl: './day.component.html',
   styleUrls: ['./day.component.scss']
 })
