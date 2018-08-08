@@ -1,12 +1,8 @@
 nav {
   display: flex;
   justify-content: space-between;
+  width: 100%;
   align-items: center;
-  width: 1024px;
-  margin: 0px auto;
-  border-radius: 5px 5px 0px 0px;
-  border: solid #A6A7AB;
-  border-width: 2px 2px 0px 2px;
   .arrow-btn {
     position: relative;
     border-radius: 100px;

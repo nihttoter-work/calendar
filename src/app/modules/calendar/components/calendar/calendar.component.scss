@@ -1,7 +1,16 @@
-table {
+.outer {
   width: 1024px;
   margin: 0px auto;
-  border: solid #A6A7AB;
-  border-width: 0px 2px 2px 2px;
-  border-radius: 0px 0px 5px 5px;
+  border: 2px solid #A6A7AB;
+  border-radius: 5px;
+}
+
+table {
+  width: 100%;
+  border: none;
+  margin: 0px;
+  padding: 0px;
+  thead {
+    background-color: #D1D4D9;
+  }
 }
