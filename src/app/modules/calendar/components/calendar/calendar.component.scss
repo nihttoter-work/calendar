@@ -15,5 +15,6 @@
     border: 1px solid map-get($map: $border-colors, $key: day);
     flex-basis: 14.09%;
     padding-top: 30px;
+    height: 120px;
   }
 }
