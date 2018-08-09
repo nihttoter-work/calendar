@@ -1,0 +1,15 @@
+$font-sizes: ( 10: 10, 12: 12, 14: 14, 16: 16, 18: 18, 20: 20, 22: 22, 24: 24, 26: 26);
+@mixin gradient($from, $to) {
+  background: $from;
+  background: -moz-linear-gradient(top, $from 0%, $to 100%);
+  background: -webkit-linear-gradient(top, $from 0%, $to 100%);
+  background: linear-gradient(to bottom, $from 0%, $to 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to', GradientType=0);
+}
+
+@each $name,
+$value in $font-sizes {
+  .fs-#{$name} {
+    font-size: #{$value}px;
+  }
+}

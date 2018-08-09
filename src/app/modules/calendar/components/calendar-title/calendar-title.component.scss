@@ -1,9 +1,6 @@
+@import '../../../../../styles.scss';
 nav {
-  background: #ffffff;
-  background: -moz-linear-gradient(top, #ffffff 0%, #e4e6ec 100%);
-  background: -webkit-linear-gradient(top, #ffffff 0%, #e4e6ec 100%);
-  background: linear-gradient(to bottom, #ffffff 0%, #e4e6ec 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e4e6ec', GradientType=0);
+  @include gradient(#ffffff, #e4e6ec);
   display: flex;
   justify-content: space-between;
   width: 100%;

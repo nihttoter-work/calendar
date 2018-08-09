@@ -1,3 +1,4 @@
+@import '../../../../../styles.scss';
 .outer {
   width: 1024px;
   margin: 0px auto;
@@ -10,6 +11,9 @@
   flex-wrap: wrap;
   width: 100%;
   &>div {
-    flex-basis: 12.525%;
+    position: relative;
+    border: 1px solid map-get($map: $border-colors, $key: day);
+    flex-basis: 14.09%;
+    padding-top: 30px;
   }
 }

@@ -1,15 +1,12 @@
+@import '../../../../../styles.scss';
 .calendar-header {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   div {
+    @include gradient(#c5c8cc, #d5d7dd);
     flex-basis: 12.525%;
     border: 1px solid #BEC3CF;
-    background: #c5c8cc;
-    background: -moz-linear-gradient(top, #c5c8cc 1%, #d1d4db 100%);
-    background: -webkit-linear-gradient(top, #c5c8cc 1%, #d1d4db 100%);
-    background: linear-gradient(to bottom, #c5c8cc 1%, #d1d4db 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5c8cc', endColorstr='#d1d4db', GradientType=0);
     text-align: center;
     text-transform: uppercase;
     color: #8991A2;
