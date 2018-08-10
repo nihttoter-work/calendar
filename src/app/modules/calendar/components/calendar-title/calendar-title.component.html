@@ -1,11 +1,11 @@
 <nav>
-  <div class="arrow-btn">
+  <div class="arrow-btn" (click)="onLeftClick()">
     <i class="arrow left"></i>
   </div>
   <div>
-    December 2016
+    {{month}} {{year}}
   </div>
-  <div class="arrow-btn">
+  <div class="arrow-btn" (click)="onRightClick()">
     <i class="arrow right"></i>
   </div>
 </nav>

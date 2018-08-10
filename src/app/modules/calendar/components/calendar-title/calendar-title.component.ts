@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Day } from '../../models/day';
 import { Observable } from '../../../../../../node_modules/rxjs';
 
@@ -8,11 +8,25 @@ import { Observable } from '../../../../../../node_modules/rxjs';
   styleUrls: ['./calendar-title.component.scss']
 })
 export class CalendarTitleComponent implements OnInit {
-  days: Observable<Day[]>;
+  @Input()
+  year: string;
+  @Input()
+  month: string;
 
-  constructor() { }
+  @Output()
+  leftClick: EventEmitter<any> = new EventEmitter();
+  @Output()
+  rightClick: EventEmitter<any> = new EventEmitter();
 
-  ngOnInit() {
+  constructor() {}
+
+  ngOnInit() {}
+
+  onLeftClick() {
+    this.leftClick.next();
   }
 
+  onRightClick() {
+    this.rightClick.next();
+  }
 }
