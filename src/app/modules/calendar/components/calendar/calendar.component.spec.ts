@@ -4,6 +4,7 @@ import { CalendarComponent } from './calendar.component';
 import { CalendarTitleComponent } from '../calendar-title/calendar-title.component';
 import { CalendarHeaderComponent } from '../calendar-header/calendar-header.component';
 import { DayComponent } from '../day/day.component';
+import { SharedModule } from '../../../shared/shared.module';
 
 describe('CalendarComponent', () => {
   let component: CalendarComponent;
@@ -11,6 +12,7 @@ describe('CalendarComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [SharedModule],
       declarations: [
         CalendarComponent,
         CalendarTitleComponent,

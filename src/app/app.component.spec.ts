@@ -4,10 +4,11 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { CalendarTitleComponent } from './modules/calendar/components/calendar-title/calendar-title.component';
 import { CalendarHeaderComponent } from './modules/calendar/components/calendar-header/calendar-header.component';
 import { DayComponent } from './modules/calendar/components/day/day.component';
+import { SharedModule } from './modules/shared/shared.module';
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [RouterTestingModule],
+      imports: [RouterTestingModule, SharedModule],
       declarations: [
         AppComponent,
         CalendarTitleComponent,

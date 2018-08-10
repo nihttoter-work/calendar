@@ -3,21 +3,6 @@
   <app-calendar-header></app-calendar-header>
 
   <div class="days">
-    <div class="fs-20" day></div>
-    <div day></div>
-    <div day></div>
-    <div day></div>
-    <div day></div>
-    <div day></div>
-    <div day></div>
-    <div day></div>
-    <div day></div>
-    <div day></div>
-    <div day></div>
-    <div day></div>
-    <div day></div>
-    <div day></div>
-    <div day></div>
-    <div day></div>
+    <div *ngFor="let day of days" dayComponent [day]="day" class="fs-20"></div>
   </div>
 </div>

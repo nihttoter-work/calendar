@@ -1,6 +1,6 @@
 import { Event } from './event';
 
 export class Day {
-    date: Date;
-    events: Event;
+  date: Date;
+  events: Event[];
 }

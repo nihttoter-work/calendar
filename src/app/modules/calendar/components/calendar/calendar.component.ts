@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CalendarService } from '../../services/calendar.service';
+import { Day } from '../../models/day';
 
 @Component({
   selector: 'app-calendar',
@@ -6,10 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./calendar.component.scss']
 })
 export class CalendarComponent implements OnInit {
+  days: Day[] = this.calendarService.getDays();
 
-  constructor() { }
+  constructor(private calendarService: CalendarService) {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
